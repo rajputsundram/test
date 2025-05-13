@@ -1,8 +1,8 @@
 import { ConnectDB } from '../../../lib/config/db';
-import MedicalTest from '../../../lib/models/test';
+import MedicalTest from '../../../lib/models/Booking';
 import { NextResponse } from 'next/server';
 
-export async function GET(request) {
+export async function GET() {
   await ConnectDB();
   const tests = await MedicalTest.find().sort({ testDate: -1 });
   return NextResponse.json(tests, { status: 200 });

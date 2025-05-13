@@ -11,14 +11,12 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           {/* Left: Navigation Links */}
           <div className="flex space-x-8">
-            <Link href="/" className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-blue-600">
-              Home
+           
+            <Link href="/labtest" className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-blue-600">
+              LabTest
             </Link>
-            <Link href="/report" className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-blue-600">
-              Report
-            </Link>
-            <Link href="/admin" className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-blue-600">
-              Admin
+            <Link href="/booking" className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-blue-600">
+              Booking
             </Link>
           </div>
 
